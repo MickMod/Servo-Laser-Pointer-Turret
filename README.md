@@ -16,8 +16,11 @@ These instructions will give you a pretty ugly result, but it will work fine. Ju
 # Wiring
 Connect the servos 5V and GND (Brown and Red) to the 5V and GND headers on your Arduino.
 Connect the signal wires as such:
+<br>
 X-Axis: D10
+<br>
 Y-Axis: D11
+<br>
 These pins can be changed in the supplied .ino easily.
 
 # How to use
