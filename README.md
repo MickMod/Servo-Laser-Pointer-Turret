@@ -10,7 +10,7 @@
 These instructions will give you a pretty ugly result, but it will work fine. Just base your own designs off of this example.
 1. Glue one servo to a heavy object (for example a metal box or can). This is our Y-rotation.
 2. Glue the other servo on top of the first servo, laying on it's side. This will be our X-rotation.
-3. Glue the laser pointer onto the side of the top servo, so that when the top servo rotates, the laser pointer goes up and down, and when the bottom servo rotates, the laser pointer goes from side to side.
+3. Glue the laser pointer onto the side of the top servo, so that when the top servo rotates, the laser pointer points up and down, and when the bottom servo rotates, the laser pointer points from side to side.
 4. Done!
 
 # Wiring
