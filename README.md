@@ -26,7 +26,8 @@ These pins can be changed in the supplied .ino easily.
 # How to use
 1. Flash the Arduino sketch to your arduino using the .ino file provided.
 2. Open the visual studio project, or the provided .exe (make sure your Arduino is connected to COM7 if you plan to use the prebaked .exe!)
-3. In Visual Studio, click on "port" under the window, and change the "PortName" to the one your Arduino is connected to (you can see this in the Arduino IDE, under Tools > Port).
-4. Run the code.
-5. If you did everything right you should now be able to pan and tilt the turret by moving your mouse around the window.
-6. If one direction (for example X) is mirrored, go into Visual Studio, and put a "180 - " before either "coordinates.X" or "coordinates.Y" (Line 44 and 45).
+3. Open the Visual Studio project, and double click "Form1.cs" to customize the code.
+4. In Visual Studio, click on "port" under the window, and change the "PortName" to the one your Arduino is connected to (you can see this in the Arduino IDE, under Tools > Port).
+5. Run the code.
+6. If you did everything right you should now be able to pan and tilt the turret by moving your mouse around the window.
+7. If one direction (for example X) is mirrored, go into Visual Studio, and put a "180 - " before either "coordinates.X" or "coordinates.Y" (Line 44 and 45).
