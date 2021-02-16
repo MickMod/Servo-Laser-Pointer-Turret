@@ -1,5 +1,5 @@
 # Servo Laser Pointer Turret
- Arduino based laser pointer turret, based on the work of Michael Reeves.
+ Arduino based laser pointer turret that you control with your mouse.
 
 # Materials needed
 1x Arduino (any kind, tested with Uno) <br>
