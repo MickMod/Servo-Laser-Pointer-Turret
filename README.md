@@ -2,7 +2,7 @@
  Arduino based laser pointer turret that you control with your mouse.
 
 # Materials needed
-1x Arduino (any kind, tested with Uno) <br>
+1x Arduino (any kind, tested with an Arduino Uno as well as a NodeMCU v0.9) <br>
 2x Servo (tested with both 9g and high torque servos)<br>
 1x Computer (optimally with Visual Studio installed)
 
