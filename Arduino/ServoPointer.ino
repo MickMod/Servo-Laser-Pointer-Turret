@@ -1,4 +1,4 @@
-// Servo controlled laser pointer turret, originally made by Michael Reeves.
+// Servo controlled laser pointer turret.
 #include <Servo.h>
 
 Servo serX;
