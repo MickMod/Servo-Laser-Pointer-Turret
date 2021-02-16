@@ -1,43 +1,40 @@
 // Servo controlled laser pointer turret.
 #include <Servo.h>
 
-Servo serX;
-Servo serY;
+Servo Xservo;
+Servo Yservo;
 
-String serialData;
+String Data;
 
 void setup() {
-  serX.attach(10);
-  serY.attach(11);
+  Xservo.attach(10);
+  Yservo.attach(11);
   Serial.begin(9600);
   Serial.setTimeout(10);
 }
 
 void loop() {
-  // Not used for this project.
-
+  // Not used.
 }
 
-void serialEvent(){
-  serialData = Serial.readString();
+void Event(){
+  Data = Serial.readString();
 
   Serial.print("X: ");
-  Serial.println(parseDataX(serialData));
+  Serial.println(parseX(Data));
   Serial.print("Y: ");
-  Serial.println(parseDataY(serialData));
-  serX.write(parseDataX(serialData));
-  serY.write(parseDataY(serialData));
+  Serial.println(parseY(Data));
+  Xservo.write(parseX(Data));
+  Yservo.write(parseY(Data));
 }
 
-  int parseDataX(String data){
+  int parseX(String data){
     data.remove(data.indexOf("Y"));
     data.remove(data.indexOf("X"), 1);
-  
     return data.toInt();
 }
 
-int parseDataY(String data){
+int parseY(String data){
   data.remove(0, data.indexOf("Y") + 1);
-
   return data.toInt();
 }
