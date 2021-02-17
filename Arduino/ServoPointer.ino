@@ -1,36 +1,41 @@
 // Servo controlled laser pointer turret.
-#include <Servo.h>
+#include<Servo.h>
 
-Servo Xservo;
-Servo Yservo;
+Servo serX;
+Servo serY;
 
-String Data;
+String serialData;
 
 void setup() {
-  pinMode(9, OUTPUT); //5V for second servo, remove if your Arduino has two 5V outputs.
-  Xservo.attach(10); //Y-rotation
-  Yservo.attach(11); //X-rotation
+  pinMode(9, OUTPUT); //5V for second servo
+  serX.attach(10); //Pan servo
+  serY.attach(11); //Tilt servo
   Serial.begin(9600);
   Serial.setTimeout(10);
 }
 
 void loop() {
-  digitalWrite(9, HIGH); //5V for second servo, remove if your Arduino has two 5V outputs.
+  digitalWrite(9, HIGH); //5V for second servo
 }
 
-void Event(){
-  Data = Serial.readString();
-  Xservo.write(parseX(Data));
-  Yservo.write(parseY(Data));
+void serialEvent() {
+  serialData = Serial.readString();
+  serX.write(parseDataX(serialData));
+  serY.write(parseDataY(serialData));
+  
+  Serial.print("X: ");
+  Serial.println(parseDataX(serialData));
+  Serial.print("Y: ");
+  Serial.println(parseDataY(serialData));
 }
 
-int parseX(String data){
+int parseDataX(String data){
   data.remove(data.indexOf("Y"));
   data.remove(data.indexOf("X"), 1);
   return data.toInt();
 }
 
-int parseY(String data){
-  data.remove(0, data.indexOf("Y") + 1);
+int parseDataY(String data){
+  data.remove(0,data.indexOf("Y") + 1);
   return data.toInt();
 }

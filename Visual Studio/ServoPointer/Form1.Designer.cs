@@ -35,7 +35,7 @@ namespace ServoPointer
             // 
             // port
             // 
-            this.port.PortName = "COM7";
+            this.port.PortName = "COM3";
             // 
             // Form1
             // 

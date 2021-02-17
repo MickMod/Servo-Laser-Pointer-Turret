@@ -41,7 +41,7 @@ namespace ServoPointer
                 watch = Stopwatch.StartNew();
 
                 port.Write(String.Format("X{0}Y{1}",
-                    (coordinates.X / (Size.Width / 180)),
+                    (180 - coordinates.X / (Size.Width / 180)),
                     (coordinates.Y / (Size.Height / 180))));
             }
         }
