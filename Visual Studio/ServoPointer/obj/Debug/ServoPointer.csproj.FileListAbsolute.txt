@@ -28,3 +28,13 @@ C:\Users\Mick\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPoi
 C:\Users\Mick\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.csproj.CoreCompileInputs.cache
 C:\Users\Mick\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.exe
 C:\Users\Mick\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.pdb
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\bin\Debug\ServoPointer.exe.config
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\bin\Debug\ServoPointer.exe
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\bin\Debug\ServoPointer.pdb
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.csprojAssemblyReference.cache
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.Form1.resources
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.Properties.Resources.resources
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.csproj.GenerateResource.cache
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.csproj.CoreCompileInputs.cache
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.exe
+C:\Users\Rama\Documents\GitHub\Servo-Laser-Pointer-Turret\Visual Studio\ServoPointer\obj\Debug\ServoPointer.pdb

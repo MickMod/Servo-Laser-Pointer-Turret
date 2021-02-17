@@ -7,31 +7,27 @@ Servo Yservo;
 String Data;
 
 void setup() {
-  Xservo.attach(10);
-  Yservo.attach(11);
+  pinMode(9, OUTPUT); //5V for second servo, remove if your Arduino has two 5V outputs.
+  Xservo.attach(10); //Y-rotation
+  Yservo.attach(11); //X-rotation
   Serial.begin(9600);
   Serial.setTimeout(10);
 }
 
 void loop() {
-  // Not used.
+  digitalWrite(9, HIGH); //5V for second servo, remove if your Arduino has two 5V outputs.
 }
 
 void Event(){
   Data = Serial.readString();
-
-  Serial.print("X: ");
-  Serial.println(parseX(Data));
-  Serial.print("Y: ");
-  Serial.println(parseY(Data));
   Xservo.write(parseX(Data));
   Yservo.write(parseY(Data));
 }
 
-  int parseX(String data){
-    data.remove(data.indexOf("Y"));
-    data.remove(data.indexOf("X"), 1);
-    return data.toInt();
+int parseX(String data){
+  data.remove(data.indexOf("Y"));
+  data.remove(data.indexOf("X"), 1);
+  return data.toInt();
 }
 
 int parseY(String data){
